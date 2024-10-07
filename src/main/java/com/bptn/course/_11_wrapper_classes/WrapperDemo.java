@@ -1,19 +1,32 @@
 package com.bptn.course._11_wrapper_classes;
 
 public class WrapperDemo {
-	   private double temperature;
-	   public static double maxTemp = 0;
 
-	   public WrapperDemo(double t) {
-	        temperature = t;
-	        if (t > maxTemp)
-	            maxTemp = t;
-	   }
+	public static void main(String[] args) {
+		
+//		Integer -> int
+//		Float -> float
+//		Double -> double
+//		Boolean -> boolean
+		
+//		int number1 = 10;
+//		
+//		String username = new String("Test");
+//		Integer number2 = new Integer(50);
+		
+		 Integer i = 2;
+	     Double d = 3.5;
+	     System.out.println( i.intValue() ); // intValue() returns the primitive value
+	     System.out.println( d.doubleValue() );
 
-	   public static void main(String[] args) {
-	        WrapperDemo t1 = new WrapperDemo(75);
-	        WrapperDemo t2 = new WrapperDemo(100);
-	        WrapperDemo t3 = new WrapperDemo(65);
-	        System.out.println("Max Temp: " + WrapperDemo.maxTemp);
-	   }
-	 }
+	     String ageStr = "16";
+	     // Integer.parseInt and Double.parseDouble are often used to
+	     // convert an input string to a number so you can do math on it.
+	     System.out.println("Age " + ageStr + " in 10 years is " + (Integer.parseInt(ageStr) + 10) );
+	     System.out.println("Note that + with strings does concatenation, not addition: " + (ageStr + 10));
+	   
+		
+	
+	}
+
+}

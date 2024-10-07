@@ -17,6 +17,7 @@ class BankSystem {
 		
 		CheckingAccount personalAccount = new CheckingAccount("1234", 500, 300);
 		personalAccount.withdraw(300);
+		personalAccount.displayAccountInfo();
 
 	}
 
